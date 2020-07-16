@@ -1,0 +1,3 @@
+mysamplesqlserver1324516
+azureuser
+Password10!
