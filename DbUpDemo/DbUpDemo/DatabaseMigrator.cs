@@ -159,7 +159,8 @@ namespace DbUpDemo
 
 		private void CreateDatabase()
 		{
-			string connString = string.Format("Server={0};Database=Master;Integrated Security=SSPI;", _ServerName);
+			string connString = string.Format("Server={0};Database=Master;User ID={1};Password={2};", _ServerName, _UserID, _Password);
+			//string connString = string.Format("Server={0};Database=Master;Integrated Security=SSPI;", _ServerName);
 			var str = string.Format(@"
 				CREATE DATABASE {0};
 				ALTER AUTHORIZATION ON DATABASE::{0} TO sa;
